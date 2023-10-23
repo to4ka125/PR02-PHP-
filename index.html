@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-Language" content="ru">
+</head>
+<body>
+
+    <div class="container">
+        <div class="block">
+            <section class="block__item">
+                <h2 class="block__item--title">
+                    У вас уже есть аккаунт? 
+                </h2>
+                <button class="block__item--btn signin-btn">
+                    Войти
+                </button>
+                
+            </section>
+
+            <section class="block__item">
+                <h2 class="block__item--title">
+                    У вас нет аккаунта?
+                </h2>
+                <button class="block__item--btn signup-btn ">
+                   Зарегестрироваться
+                </button>
+                
+            </section>
+        </div>
+
+            <div class="form__box">
+
+                <form accept-charset="UTF-8" action="result.php" class="form form--signin" method="GET">
+                    <h3 class="form__title">Вход</h3>
+                    <p>
+                        <input type="text" id="value1" name="value1" class="form__input" placeholder="Логин">
+                    </p>
+                    <p>
+                        <input type="password"id="value2" name="value2" class="form__input" placeholder="Пароль">
+                    </p>
+                    <p>
+                        <button class="form__btn">
+                            Войти
+                        </button>
+                    </p>
+                    <p>
+                        <a href="#">Востановить пароль</a>
+                    </p>
+                </form>
+
+                <form action="register.html" class="form form--signup">
+                    <h3 class="form__title">Регистрация</h3>
+                    <p>
+                        <input type="text" name="value1" id="value1" class="form__input" placeholder="Логин">
+                    </p>
+                    <p>
+                        <input type="email" name="value2" id="value2" class="form__input" placeholder="Email">
+                    </p>
+                    <p>
+                        <input type="password" name="value3" id="value3" class="form__input" placeholder="Пароль">
+                    </p>
+                    <p>
+                        <input type="password" name="value4" id="value4" class="form__input" placeholder="Подтвердите Пароль">
+                    </p>
+                    <p>
+                        <button class="form__btn btn--signup">
+                            Регистрация
+                        </button>
+                    </p>
+                  
+                </form>
+
+            </div>
+
+    </div>
+    <script defer src="js/app.js"></script>
+</body>
+</html>
