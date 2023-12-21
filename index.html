@@ -34,13 +34,13 @@
 
             <div class="form__box">
 
-                <form accept-charset="UTF-8" action="result.php" class="form form--signin" method="GET">
+                <form accept-charset="UTF-8" action="php/MySqlAut.php" class="form form--signin" method="POST">
                     <h3 class="form__title">Вход</h3>
                     <p>
-                        <input type="text" id="value1" name="value1" class="form__input" placeholder="Логин">
+                        <input type="text" id="login" name="login" class="form__input" placeholder="Логин">
                     </p>
                     <p>
-                        <input type="password"id="value2" name="value2" class="form__input" placeholder="Пароль">
+                        <input type="password"id="password" name="password" class="form__input" placeholder="Пароль">
                     </p>
                     <p>
                         <button class="form__btn">
@@ -52,24 +52,22 @@
                     </p>
                 </form>
 
-                <form action="register.html" class="form form--signup">
+                <form action="php/MySqlReg.php" class="form form--signup" method="POST">
                     <h3 class="form__title">Регистрация</h3>
                     <p>
-                        <input type="text" name="value1" id="value1" class="form__input" placeholder="Логин">
+                        <input type="text" name="login" id="login" class="form__input" placeholder="Логин">
                     </p>
                     <p>
-                        <input type="email" name="value2" id="value2" class="form__input" placeholder="Email">
+                        <input type="password" name="password" id="password" class="form__input" placeholder="Пароль">
                     </p>
                     <p>
-                        <input type="password" name="value3" id="value3" class="form__input" placeholder="Пароль">
+                        <input type="password" name="confirm_password" id="confirm_password" class="form__input" placeholder="Подтвердите Пароль">
                     </p>
                     <p>
-                        <input type="password" name="value4" id="value4" class="form__input" placeholder="Подтвердите Пароль">
-                    </p>
-                    <p>
-                        <button class="form__btn btn--signup">
-                            Регистрация
-                        </button>
+
+                        <input type="submit" value="Регистрация" class="form__btn btn--signup">
+
+
                     </p>
                   
                 </form>
